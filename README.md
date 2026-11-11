@@ -27,7 +27,11 @@ After every result you can save it as `reports/<name>_<date>_<time>.txt` next to
 
 ## Screenshots
 
-_Screenshots will be added here._
+### Main menu
+![XYMYX Toolkit main menu](docs/images/menu.png)
+
+### Quick security check
+![XYMYX Toolkit quick security check](docs/images/security-check.png)
 
 ## Build
 
