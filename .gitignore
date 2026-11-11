@@ -1,0 +1,30 @@
+# Reports contain IP addresses, MAC addresses, open ports and drive data.
+# They must never be committed. This pattern matches a "reports" folder at
+# any depth, including the ones created next to a built executable.
+reports/
+
+# Build output (build/, build-msvc/, build-mingw/, build-mac/, ...)
+build/
+build-*/
+out/
+*.exe
+*.obj
+*.o
+*.pdb
+*.ilk
+
+# CMake files that can appear after an in-source configure
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CMakeUserPresets.json
+
+# Editors and operating systems
+.vs/
+.vscode/
+.idea/
+.claude/
+.DS_Store
+._*
+Thumbs.db
+desktop.ini

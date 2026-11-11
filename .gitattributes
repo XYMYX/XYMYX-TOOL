@@ -1,0 +1,16 @@
+# Store every text file with LF line endings in the repository and check it
+# out with LF, on every system. This keeps diffs clean when the same folder
+# is used from Windows tools and from Git in WSL.
+* text=auto eol=lf
+
+*.cpp   text eol=lf
+*.h     text eol=lf
+*.md    text eol=lf
+*.txt   text eol=lf
+*.cmake text eol=lf
+
+# Never touch binary files.
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
