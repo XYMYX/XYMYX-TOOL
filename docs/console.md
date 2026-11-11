@@ -20,6 +20,7 @@ A terminal shows the bytes a program sends. Some byte sequences are not shown bu
 
 | Sequence | Effect |
 | --- | --- |
+| `\x1b[97m` | switch to bright white |
 | `\x1b[92m` | switch to bright green |
 | `\x1b[1m` | switch to bold |
 | `\x1b[0m` | reset everything |

@@ -44,7 +44,7 @@ bool isUnavailable(std::string_view value) {
 // would show up as garbage in a text editor.
 Report::Report(std::string title) : title_(std::move(title)) {
   con::println();
-  con::println(con::paint(con::Color::Cyan, "=== " + title_ + " ==="));
+  con::println(con::paint(con::Color::White, "=== " + title_ + " ==="));
 }
 
 void Report::heading(std::string_view text) {

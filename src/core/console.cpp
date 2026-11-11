@@ -35,11 +35,10 @@ UINT g_oldOutputCp = 0;
 
 const char* code(Color color) {
   switch (color) {
+    case Color::White: return "\x1b[97m";
     case Color::Red: return "\x1b[91m";
     case Color::Green: return "\x1b[92m";
     case Color::Yellow: return "\x1b[93m";
-    case Color::Cyan: return "\x1b[96m";
-    case Color::Magenta: return "\x1b[95m";
     case Color::Gray: return "\x1b[90m";
     case Color::Bold: return "\x1b[1m";
   }

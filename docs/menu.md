@@ -43,6 +43,14 @@ The second case is easy to forget. Without it, a closed input would make the loo
 
 ## The logo
 
-`printLogo` prints five lines of ASCII art. They are written as raw string literals, `R"(...)"`. In a normal string every backslash would have to be doubled, which makes ASCII art unreadable in the source.
+`printLogo` prints the XYMYX symbol as eleven lines of ASCII art: two vertical outer lines, two diagonals that cross in an X, and a short vertical line from the centre down. Only `|`, `/`, `\` and `X` are used, so it renders the same in the Windows console and the macOS Terminal.
+
+The lines are written as raw string literals, `R"(...)"`. In a normal string every backslash would have to be doubled, which makes ASCII art unreadable in the source.
+
+The diagonals move two columns per line. Terminal characters are about twice as tall as they are wide, so that keeps the X close to square.
+
+## Colours
+
+The logo, the menu numbers and report titles use bright white as the accent colour. Menu labels are not painted at all: they use the terminal's default foreground colour and stay readable on light backgrounds. Green, yellow and red are kept for results.
 
 The version shown under the logo comes from `XYMYX_VERSION`. That is not defined in any source file: `CMakeLists.txt` passes it to the compiler from the `project(... VERSION ...)` line, so the version number exists in one place only.

@@ -9,7 +9,9 @@
 
 namespace con {
 
-enum class Color { Red, Green, Yellow, Cyan, Magenta, Gray, Bold };
+// White is the accent colour (logo, menu numbers, titles). Green, Yellow and
+// Red are reserved for results, so a colour always means the same thing.
+enum class Color { White, Red, Green, Yellow, Gray, Bold };
 
 void init();
 void shutdown();
